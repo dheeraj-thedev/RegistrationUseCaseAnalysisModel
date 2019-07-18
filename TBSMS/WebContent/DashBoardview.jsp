@@ -34,6 +34,8 @@
 				<!-- Breadcrumbs-->
 				<ol class="breadcrumb">
 					<li class="breadcrumb-item"><a href="#">User</a></li>
+					
+					<li class="breadcrumb-item"> <%=request.getAttribute("user") %></li>
 					<li class="breadcrumb-item active">Dashboard</li>
 				</ol>
 
@@ -97,5 +99,3 @@
 		<script src="js/demo/chart-area-demo.js"></script>
 </body>
 </html>
-
-

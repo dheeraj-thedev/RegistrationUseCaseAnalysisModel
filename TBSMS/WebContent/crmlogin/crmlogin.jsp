@@ -32,7 +32,7 @@
 					<div style="display: none" id="login-alert"
 						class="alert alert-danger col-sm-12"></div>
 
-					<form id="loginform" class="form-horizontal" action="AuthCont" method="post" role="form">
+					<form id="loginform" class="form-horizontal" action="AuthController" method="post" role="form">
 
 						<div style="margin-bottom: 25px" class="input-group">
 							<span class="input-group-addon"><i

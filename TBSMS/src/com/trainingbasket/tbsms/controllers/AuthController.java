@@ -22,7 +22,6 @@ import com.trainingbasket.tbsms.utils.ValidateNormalData;
 @WebServlet("/AuthController")
 public class AuthController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-
 	AuthServices authServices = null;
 
 	/**
@@ -68,7 +67,10 @@ public class AuthController extends HttpServlet {
 			user.setUsename(userName);
 			user.setPassword(password);
 			if (authServices.autheticateUser(user)) {
-				out.print("Authenticated");
+				//out.print("Authenticated");
+				dispatcher = request.getRequestDispatcher("DashBoardview.jsp");
+				request.setAttribute("user", user.getUsename());
+				dispatcher.forward(request, response);
 			} else
 				out.print("User Does not exist ");
 

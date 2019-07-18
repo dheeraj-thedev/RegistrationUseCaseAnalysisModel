@@ -40,7 +40,7 @@
 			</a>
 				<div class="dropdown-menu" aria-labelledby="pagesDropdown">
 					<h6 class="dropdown-header">Student Details:</h6>
-					<a class="dropdown-item" href="studentregistrationform.jsp">Add
+					<a class="dropdown-item" href="<%=getServletContext().getContextPath() %>/student/addStudent.jsp">Add
 						Student</a> <a class="dropdown-item" href="studentview.jsp">View Student</a> <a
 						class="dropdown-item" href="#">Edit Student</a> <a
 						class="dropdown-item" href="#">Attendance</a> <a

@@ -18,10 +18,14 @@ public class AuthServices {
 		boolean status= false;
 		try {
 			User userFromDb = authDAO.getUser(user);
+			if(userFromDb==null) {
+				return false;
+			}
 			if (userFromDb.getPassword().equals(user.getPassword())
 					&& userFromDb.getPassword().equals(user.getPassword())) {
 				status= true;
 			}
+
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
