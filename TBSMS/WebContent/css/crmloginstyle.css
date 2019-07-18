@@ -1,0 +1,141 @@
+*{
+		margin:0;
+		padding:0;
+}
+.bgimg{
+	width:100%;
+	height:100vh;
+	background-image:linear-gradient(27deg,black 50%,red 50%);
+}
+.centerdiv{
+	width:400px;
+	height:530px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	background-image:linear-gradient(27deg,red 50%,black 50%);
+	transform:translate(-50%,-50%);
+	box-shadow:0 1px 6px rgba(0,0,0,0.12),0 1px 4px rgba(0,0,0,0,24);
+	border-radius:15px;
+	
+}
+.element{
+	padding-left:5px;
+	margin-left:40px;
+}
+.button{
+
+  background-color: black; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 5px;
+  margin-left:20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius:15px;
+  width:300px;
+}
+#profilepic{
+	width:80px;
+	height:80px;
+	margin-left:auto;
+	margin-right:auto;
+	border-radius:50%;
+	position:relative;
+	top:-40px;
+	padding-left:40%;
+	left:calc((350px-80px)/2);
+	
+}
+.h4{
+	text-align:center;
+	color:#FFFF66;
+	
+	font-size:20px;
+	word-spacing:5px;
+	margin-top:-70px;
+	
+	text-shadow:-2px 2px 1px #0A848436;
+}
+.h41{
+	text-align:center;
+	color:white;
+	
+	font-size:15px;
+	word-spacing:5px;
+	margin-top:5px;
+	margin-bottom:50px;
+	text-shadow:-2px 2px 1px #0A848436;
+}
+.inputbox{
+	width:calc(100%-20px);
+	height:40px;
+	display:block;
+	margin:auto;
+	padding:0 10px;
+	box-sizing:border-box;
+	width:300px;
+	border-radius:15px;
+	margin-bottom:15px;
+}
+::placeholder{
+	letter-spacing:2px;
+}
+button{
+	width:calc(100%-40px);
+	height:30px;
+	display:block;
+	margin:auto;
+	color:black;
+	background-color:grey;
+	border:none;
+	
+}
+.centerreg{
+	width:450px;
+	height:525px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	background-image:linear-gradient(27deg,grey 50%,black 50%);
+	/*background-color:black;*/
+	transform:translate(-50%,-50%);
+	box-shadow:0 1px 6px rgba(0,0,0,0.12),0 1px 4px rgba(0,0,0,0,24);
+}
+.labelbox{
+	padding-left:10px;
+	color:white;
+}
+.bgreg{
+	width:100%;
+	height:100vh;
+	background-image:linear-gradient(27deg,black 50%,grey 50%);
+}
+#profilepic2{
+	width:80px;
+	height:50px;
+	margin-left:35px;
+	margin-right:auto;
+	
+	position:relative;
+	top:-70px;
+	
+	left:20px;;
+	
+}
+#profilepic1{
+	width:80px;
+	height:80px;
+	margin-left:10px;
+	margin-right:auto;
+	border-radius:50%;
+	position:relative;
+	top:-60px;
+	
+	left:0%;
+	
+}

@@ -1,0 +1,207 @@
+*{
+		margin:0;
+		padding:0;
+		 box-sizing: border-box;
+}
+
+.heading{
+	font-size:2vw;
+	margin-bottom:15px;
+}
+.centerdiv{
+	
+	position:absolute;
+	float:left;
+	margin-top:5px;
+	margin-left:20px;
+	
+}
+.label{
+padding-left:10px;
+padding-bottom:5px;
+padding-top:5px;
+}
+.inputbox{
+	margin-bottom:5px;
+	size:35;
+	margin-left:20px;
+	margin-right:20px;
+	margin-top:10px;
+	border-radius: 5px;
+}
+.midlabel{
+	padding-left:10px;
+	padding-bottom:5px;
+	
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: Lavender ;
+  padding: 10px;
+  justify-content: space-between;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  /*border: 1px solid rgba(0, 0, 0, 0.8);*/
+  padding: 5px;
+  font-size: 15px;
+  text-align: center;
+}
+.grid-item1 {
+  background-color: rgba(255, 255, 255, 0.8);
+  /*border: 1px solid rgba(0, 0, 0, 0.8);*/
+  padding: 5px;
+  font-size: 15px;
+  text-align: left;
+}
+.midlabel1{
+padding-left:15px;
+padding-bottom:5px;
+padding-top:5px;
+}
+.inputbox1{
+	width:350px;
+	margin-left:25px;
+	border-radius: 5px;
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 5px;
+  /*background-color: #2196F3;*/
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.grid-item {
+ /* background-color: rgba(255, 255, 255, 0.8);*/
+  text-align: center;
+   padding: 5px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.item1 {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  text-align: left;
+  border-radius: 5px;
+}
+
+.item2 {
+  grid-column:3;
+  grid-row: 1 / span 2;
+  padding: 30px;
+  font-size: 15px;
+  margin-left:1px;
+  border-radius: 5px;
+}
+/*.item6{
+	margin-right:10px;
+}
+.item7{
+	text-align:left;
+	margin-left:1px;
+	padding-left:5px;
+}*/
+.item8{
+	text-align:left;
+	margin-left:3px;
+	border-radius: 5px;
+}
+
+/*.item5 {
+  grid-column: 1 / span 3;
+  grid-row: 3;
+}*/
+.address {
+ /* background-color: rgba(255, 255, 255, 0.8);*/
+  text-align: center;
+   padding: 5px;
+  font-size: 15px;
+  
+}
+.grid-item2{
+	text-align: center;
+   padding: 5px;
+  font-size: 15px;
+  margin-right:5px;
+}
+.add1{
+	grid-column: 1 / span 4;
+  grid-row: 1;
+  text-align: left;
+  border-radius: 5px;
+  
+}
+.add2{
+	/*grid-column:1/span 3;*/
+	grid-row: 2;
+	margin-right:5px;
+}
+.add3{
+	/*grid-column:1/span 3;*/
+	grid-row: 2;
+	margin-right:5px;
+}
+.add4{
+	/*grid-column:1/span 3;*/
+	grid-row: 2;
+	margin-right:5px;
+}
+.inputboxadd{
+	width:320px;
+	margin-left:25px;
+	border-radius: 5px;
+}
+.inputboxadd1{
+	width:90%;
+	margin-left:25px;
+	border-radius: 5px;
+}
+.cn1{
+	/*grid-column: 1 / span 4;*/
+	grid-row: 1;
+  text-align: left;
+}
+.cn2{
+	/*grid-column:1/span 3;*/
+	grid-row: 1;
+	text-align: left;
+}
+}
+.cn3{
+	/*grid-column:2/span 4;*/
+	grid-row: 1;
+	
+	text-align: left;
+}
+.inputboxcn{
+	width:320px;
+	margin-left:25px;
+	border-radius: 5px;
+	
+}
+/*.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+}*/
+
+/*.item1 {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+
+.item2 {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+}
+
+.item5 {
+  grid-column: 1 / span 3;
+  grid-row: 3;
+}*/
+
