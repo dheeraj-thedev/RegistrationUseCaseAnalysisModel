@@ -6,6 +6,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+import javax.jws.soap.SOAPBinding.Use;
+
 import com.trainingbasket.tbsms.beans.User;
 import com.trainingbasket.tbsms.utils.ConnectionUtils;
 
@@ -32,6 +34,21 @@ public class AuthDAO {
 			userfromDb.setPassword(resultSet.getString(2));
 		}
 		return userfromDb;
+	}
+
+	public static void main(String[] args) {
+		User user = new User();
+		user.setUsename("Admivfdgffn");
+		user.setPassword("admin");
+		User user2= null;
+		try {
+			user2 = new AuthDAO().getUser(user);
+		} catch (ClassNotFoundException | SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		System.err.println("User Name" + user2.getUsename());
+		System.err.println("User PAssword" + user2.getPassword());
 	}
 
 }

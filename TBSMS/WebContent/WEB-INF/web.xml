@@ -4,4 +4,8 @@
   <welcome-file-list>
     <welcome-file>/crmlogin/crmlogin.jsp</welcome-file>
   </welcome-file-list>
+  <listener>
+  <listener-class>com.trainingbasket.tbsms.utils.Listener</listener-class>
+  </listener>
+  
 </web-app>
