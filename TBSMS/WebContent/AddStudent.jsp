@@ -102,6 +102,9 @@
 
 
 	<%
+	
+
+	
 	CourseService courseService = null;
 	List<Course> courses= null;
 	Set<Student> successMsg = new HashSet();

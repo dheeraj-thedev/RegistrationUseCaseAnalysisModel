@@ -48,13 +48,13 @@ public class AddStudentController extends HttpServlet {
 	}
 
 	private void saveToDb( Student student) throws SQLException {
-		Connection connection = (Connection) getServletContext().getAttribute("DbConnection");
-		PreparedStatement preparedStatement = connection
-				.prepareStatement("INSERT INTO sem1pro.studentn (Name,Age,ContactNumber) values (?,?,?)");
-		preparedStatement.setString(1, student.getName());
-		preparedStatement.setInt(2, student.getAge());
-		preparedStatement.setString(3, student.getContactNumber());
-		System.out.println(preparedStatement.executeLargeUpdate());
+//		Connection connection = (Connection) getServletContext().getAttribute("DbConnection");
+//		PreparedStatement preparedStatement = connection
+//				.prepareStatement("INSERT INTO sem1pro.studentn (Name,Age,ContactNumber) values (?,?,?)");
+//		preparedStatement.setString(1, student.getName());
+//		preparedStatement.setInt(2, student.getAge());
+//		preparedStatement.setString(3, student.getContactNumber());
+//		System.out.println(preparedStatement.executeLargeUpdate());
 	}
 
 	private Student ValidateParams(HttpServletRequest request, HttpServletResponse response, List<String> errMsg) {
@@ -78,7 +78,7 @@ public class AddStudentController extends HttpServlet {
 		if (errMsg.isEmpty()) {
 			student = new Student();
 			student.setName(name);
-			student.setAge(age);
+			//student.setAge(age);
 			student.setContactNumber(conatcNumber);
 		}
 		return student;
