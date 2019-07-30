@@ -44,7 +44,6 @@
 		<div id="content-wrapper">
 
 			
-			<br />
 	
 	<!-- content area  -->
 	
@@ -53,15 +52,9 @@
 	
 	
 	
-<div class ="form" >
-
-
+<div >
 
 	<%
-	
-	
-	
-	
 		List<String> errorMsg = (List<String>) request.getAttribute("errorMsg");
 	//	Set<Student> successMsg = (Set<Student>) request.getAttribute("studentList");
 		if (errorMsg != null) {
@@ -83,19 +76,39 @@
 
 	<form action="addStudent.do" class="form" method="get">
 	
+
+<div style="align-self: center;font-size: large;">
+	<label> Welcome To Db Enty FOrm</label>
+</div>	
 	<div class="form-group">
-	<label> Name </label>	<input type="text" name="name"> 
+
+	
 	</div>
 	
 	<div class="form-group">
-	<label>Age </label> <input type="text" name="age">
+	<label > Name </label >	<input type="text" name="name"> 
+	</div>
+	
+	<div class="form-group">
+	<label>dob </label> <input type="text" name="DOB">
 		
 	</div>
 	<div class="form-group">
 	<label>Contact Number</label>
 	<input type="text" name="contactNumber"> 
 	</div>
+	
 	<div class="form-group">
+	<label>EMail Id</label>
+	<input class="input-fields " type="text" name="emailId"> 
+	</div>
+	
+	<div class="form-group">
+	<label>Address </label>
+	<input type="text" name="address"> 
+	</div>
+	
+	<div class="form-group form btn">
 	 <input type="submit">
 	</div>
 	</form>
@@ -106,7 +119,7 @@
 
 	
 	CourseService courseService = null;
-	List<Course> courses= null;
+	Set<Course> courses= null;
 	Set<Student> successMsg = new HashSet();
 	try{
 	 courseService = 	new CourseService(ConnectionUtils.getConnection());
@@ -122,7 +135,7 @@
 			 
 		 student.setId(resultSet.getInt(1));
 		student.setName(resultSet.getString(2));
-		student.setAge(	resultSet.getInt(3));
+	
 		student.setContactNumber(	resultSet.getString(4));
 			successMsg.add(student);
 		}
@@ -167,7 +180,7 @@
 			<tr>
 				<td><%=s.getId()%></td>
 				<td><%=s.getName()%></td>
-				<td><%=s.getAge()%></td>
+		
 				<td><%=s.getContactNumber()%></td>
 			</tr>
 			<%

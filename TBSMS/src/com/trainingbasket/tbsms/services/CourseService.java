@@ -37,26 +37,31 @@ public class CourseService {
 		return coursetobeReturned;
 	}
 	
-	public static void main(String[] args) {
-		
-		try {
-			CourseService courseService = new CourseService(ConnectionUtils.getConnection());
-			Course course= courseService.getCourseById(3);
-		if (course!=null) {
-			System.out.print(course.getIdCourse());
-			System.out.print(course.getDecription());
-			System.out.print(course.getDuration());
-			System.out.print(course.getName());
-			System.out.print(course.getPrerequisites());
-		}
-		else {
-			System.out.println("Sorry");
-		}
-		} catch (ClassNotFoundException | SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+	
+	public boolean deleteCourseById(int courseId) {
+		return true;
 	}
+	
+//	public static void main(String[] args) {
+//		
+//		try {
+//			CourseService courseService = new CourseService(ConnectionUtils.getConnection());
+//			Course course= courseService.getCourseById(3);
+//		if (course!=null) {
+//			System.out.print(course.getIdCourse());
+//			System.out.print(course.getDecription());
+//			System.out.print(course.getDuration());
+//			System.out.print(course.getName());
+//			System.out.print(course.getPrerequisites());
+//		}
+//		else {
+//			System.out.println("Sorry");
+//		}
+//		} catch (ClassNotFoundException | SQLException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//	}
 	
 //	public static void main(String[] args) {
 //		try {
